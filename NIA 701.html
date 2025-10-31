@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)blob:https://48runir6cehe0bmefa86xrxzcorlfqhawahgr9sn0gq5tbtyfk-h822042238.scf.usercontent.goog/5e3d064a-e96a-4b30-a688-c3e6676068c1 -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6IjgyYmFmNDIwZTY0YmFhOTkyN2M0YTgwNDQ3MTQzMmFiMTc2OGMxMDkiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxODI0ODcwODU0MTA3MjE5NzU2NyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjXzEyYTYzZWEwYTQxZTdjMzlfaW5mb2dyYWZpYV9uaWFfNzAxX2NvbXBsZXRhLmh0bWwtMzkyIn0sImV4cCI6MTc2MTc5MDQ4OSwiaWF0IjoxNzYxNzg2ODg5LCJhbGciOiJSUzI1NiJ9.HLk3crIjB4gPoQiX6x4ekmbHCDpl4ci2RBv9K3dVzw_JJK900EhjsJtpPRnSzAqJIfbpKXv2GMMIhghmblTxki9gfO4gka3LASXBLlCf9a7oMYXIhHWVEx_k1QqyTIBRxsBgLBm2U7dcQOhBNewOx7zezmM8tTf0vR1DpuqF8fHqLI69DxEctTjp590eDbaUbg_B4vTnxoIdEq0nOA11YMeSwtf94R0LKWTJHFA_Fysf6olINU-YVlvuACtrNsukpAWhKeiep5Xd7aBnY8WzC2dFN_wddBr5XhB03VjaBMllteUsAAxPnbo23BfnQ7jwpZJhuAIIerMKkoQbvVArpQ","c_12a63ea0a41e7c39_infografia_nia_701_completa.html-392")</script><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){const d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);const c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{let a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){const b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{const c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){const c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{const c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){const c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);const e=yield c.blob();return new Promise((f,g)=>{const k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){let c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){const c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());let e;try{const f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){const b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");const c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;let c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){const c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{let g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){const g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){const b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{const e=d?(new URL(b,d||void 0)).toString():b;let f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){const [c,,e]=ia.exec(d)||[],f=c,g=e;if(!g)return"";if(g===b)return`src: ${f};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;const c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c;const e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){const d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){const d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){let d=a.cssText;const c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){let g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];const b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){const d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){const g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}const d=new Set;b(a);return d}function ua(a,b){return t(function*(){const d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){const d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){const c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b);var e=yield wa(a,b);e=yield B(e);const f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=
+16384));f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;const c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){const a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){let b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){const b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-2.5-flash-preview-09-2025","imageModelName":"imagen-3.0-generate-002","imageEditModelName":"gemini-2.5-flash-image-preview","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20"]})</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Conceptual: NIA 701</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f0f4f8; /* Un fondo azul muy claro */
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            color: #333;
+            overflow-x: hidden; /* Evita scroll horizontal por las burbujas */
+        }
+
+        /* --- Contenedor Principal de la Infografía --- */
+        .infographic-container {
+            max-width: 900px;
+            width: 100%;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border: 1px solid #d1d9e6;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* --- Encabezado --- */
+        header {
+            background: linear-gradient(135deg, #0d47a1, #1976d2); /* Gradiente azul */
+            color: #ffffff;
+            padding: 30px 40px;
+            text-align: center;
+            border-radius: 12px 12px 0 0;
+        }
+
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 28px;
+            font-weight: 700;
+            margin: 0;
+            line-height: 1.3;
+        }
+        
+        header p {
+            font-size: 18px;
+            margin: 5px 0 0 0;
+            opacity: 0.9;
+        }
+
+        /* --- Contenido Principal (El Mapa) --- */
+        .map-content {
+            padding: 40px;
+        }
+
+        /* --- Estructura Jerárquica del Mapa (Nodos) --- */
+        .node-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .node-list > li {
+            position: relative;
+            padding-left: 50px; /* Espacio para la línea y el icono */
+            margin-bottom: 25px;
+        }
+
+        /* --- La Línea Vertical Principal --- */
+        .node-list > li::before {
+            content: '';
+            position: absolute;
+            left: 20px;
+            top: 0;
+            width: 4px;
+            height: 100%;
+            background-color: #d1d9e6; /* Línea de conexión principal */
+        }
+        
+        .node-list > li:last-child::before {
+             height: 30px; /* Acorta la línea del último ítem */
+        }
+
+        /* --- El Círculo/Icono en la Línea Principal --- */
+        .node-list > li::after {
+            content: '\f192'; /* Icono de "dot-circle" */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 10px;
+            top: 5px;
+            font-size: 20px;
+            color: #1976d2;
+            background: #ffffff;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        
+        .node-list > li.case-study::after { content: '\f0b1'; } /* maleta */
+        .node-list > li.audit-report::after { content: '\f15c'; } /* file-text */
+
+
+        /* --- Contenido del Nodo (La Tarjeta) --- */
+        .node-content {
+            background-color: #f8f9fa;
+            border: 1px solid #d1d9e6;
+            border-radius: 8px;
+            padding: 25px;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        }
+        
+        .node-content h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 24px;
+            font-weight: 600;
+            color: #0d47a1;
+            margin: 0 0 15px 0;
+        }
+        
+        /* --- Nodos Secundarios (Sub-temas) --- */
+        .sub-node-list {
+            list-style: none;
+            padding: 20px 0 0 20px;
+            margin-top: 20px;
+            border-top: 2px dashed #b0bec5;
+        }
+
+        .sub-node {
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 20px;
+        }
+
+        /* --- Flecha/Línea de Conexión del Sub-nodo --- */
+        .sub-node::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 10px;
+            width: 25px;
+            height: 2px;
+            background-color: #b0bec5;
+        }
+        .sub-node::after {
+            content: '\f0da'; /* flecha-derecha */
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 20px;
+            top: 1px;
+            font-size: 16px;
+            color: #546e7a;
+        }
+
+        .sub-node h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: #1e3a8a; /* Azul más oscuro */
+            margin: 0 0 10px 0;
+        }
+        
+        /* --- Explicación y Ejemplo --- */
+        .explanation, .example {
+            margin-top: 10px;
+            padding-left: 15px;
+            border-left: 3px solid;
+        }
+        
+        .explanation {
+            border-color: #1e88e5; /* Azul para explicación */
+            background: #e3f2fd;
+            padding: 10px 15px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .example {
+            border-color: #43a047; /* Verde para ejemplo */
+            background: #e8f5e9;
+            padding: 10px 15px;
+            border-radius: 0 5px 5px 0;
+        }
+        
+        .explanation strong, .example strong {
+            display: block;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            margin-bottom: 5px;
+            font-size: 16px;
+        }
+        
+        .explanation p, .example p {
+            font-size: 15px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* --- Caso Práctico y Reporte de Auditoría --- */
+        .case-study-content {
+            background: #fffbeb;
+            border: 1px solid #fde68a;
+            border-radius: 8px;
+            padding: 25px;
+        }
+        
+        .case-study-content h3 {
+            color: #d97706;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            border-bottom: 2px solid #fde68a;
+            padding-bottom: 10px;
+        }
+        
+        .case-study-content .step {
+            margin-top: 15px;
+        }
+        .case-study-content .step strong {
+            font-family: 'Poppins', sans-serif;
+            color: #b45309;
+        }
+        
+        .audit-report-example {
+            background: #fafafa;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            padding: 20px;
+            margin-top: 15px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        
+        .audit-report-example h4 {
+            font-family: 'Poppins', sans-serif;
+            margin: 0 0 15px 0;
+            color: #000;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        
+        .audit-report-example p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        
+        .audit-report-example strong {
+             font-family: 'Courier New', Courier, monospace;
+             font-weight: bold;
+        }
+
+        /* --- Pie de Página --- */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #37474f; /* Gris oscuro */
+            color: #eceff1;
+            font-size: 14px;
+            font-weight: 600;
+            border-radius: 0 0 12px 12px;
+            margin-top: -1px; /* Se solapa con el borde del contenedor */
+        }
+        
+        footer p {
+            margin: 0;
+        }
+
+        /* --- Animación de Burbujas --- */
+        .bubbles-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        .bubble {
+            position: absolute;
+            bottom: -100px;
+            background: rgba(135, 206, 250, 0.15); /* Azul claro transparente */
+            border-radius: 50%;
+            animation: rise 25s infinite ease-in;
+            opacity: 0;
+        }
+
+        .bubble:nth-child(1) { left: 10%; width: 80px; height: 80px; animation-duration: 20s; animation-delay: 0s; }
+        .bubble:nth-child(2) { left: 20%; width: 30px; height: 30px; animation-duration: 15s; animation-delay: 3s; }
+        .bubble:nth-child(3) { left: 35%; width: 50px; height: 50px; animation-duration: 30s; animation-delay: 7s; }
+        .bubble:nth-child(4) { left: 50%; width: 120px; height: 120px; animation-duration: 18s; animation-delay: 1s; }
+        .bubble:nth-child(5) { left: 65%; width: 40px; height: 40px; animation-duration: 25s; animation-delay: 5s; }
+        .bubble:nth-child(6) { left: 80%; width: 60px; height: 60px; animation-duration: 22s; animation-delay: 10s; }
+        .bubble:nth-child(7) { left: 90%; width: 20px; height: 20px; animation-duration: 12s; animation-delay: 2s; }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(0);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-1080px);
+                opacity: 0;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+
+    <!-- Fondo de Burbujas Animadas -->
+    <div class="bubbles-bg">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </div>
+
+    <!-- Contenedor Principal de la Infografía -->
+    <div class="infographic-container">
+        
+        <!-- === Encabezado === -->
+        <header>
+            <h1>NORMA INTERNACIONAL DE AUDITORÍA 701</h1>
+            <p>COMUNICACIÓN DE LAS CUESTIONES CLAVE DE LA AUDITORÍA EN EL INFORME DE AUDITORÍA EMITIDO POR UN AUDITOR INDEPENDIENTE</p>
+        </header>
+
+        <!-- === Contenido del Mapa === -->
+        <div class="map-content">
+
+            <ul class="node-list">
+                
+                <!-- === Nodo 1: Introducción === -->
+                <li>
+                    <div class="node-content">
+                        <h2>Introducción</h2>
+                        <ul class="sub-node-list">
+                            <!-- Sub-nodo: Alcance -->
+                            <li class="sub-node">
+                                <h3>Alcance de esta NIA</h3>
+                                <div class="explanation">
+                                    <strong>Explicación:</strong> Esta norma establece la responsabilidad del auditor de comunicar las "Cuestiones Clave de la Auditoría" (KAM) en su informe. El objetivo es dar más transparencia y ayudar a los usuarios a entender las áreas más complicadas y de mayor juicio de la auditoría.
+                                </div>
+                                <div class="example">
+                                    <strong>Ejemplo:</strong> Si el auditor pasó semanas analizando cómo la empresa valoró una nueva marca de bebida, eso es una KAM. Esta norma le dice *cómo* y *qué* debe escribir en su informe sobre ese análisis para que los inversores lo entiendan.
+                                </div>
+                            </li>
+                            <!-- Sub-nodo: Fecha de entrada en vigor -->
+                            <li class="sub-node">
+                                <h3>Fecha de entrada en vigor</h3>
+                                <div class="explanation">
+                                    <strong>Explicación:</strong> Esta norma es obligatoria para las auditorías de estados financieros de períodos que terminaron el 15 de diciembre de 2016 o después.
+                                </div>
+                                <div class="example">
+                                    <strong>Ejemplo:</strong> Si una empresa cierra su año fiscal el 31 de diciembre de 2016, su auditor *ya* debía aplicar esta norma e incluir las KAM en su informe de ese año.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!-- === Nodo 2: Objetivos === -->
+                <li>
+                    <div class="node-content">
+                        <h2>Objetivos</h2>
+                        <div class="explanation">
+                            <strong>Explicación:</strong> El auditor tiene dos objetivos principales:
+                            <ol>
+                                <li><strong>Determinar:</strong> Identificar cuáles son las cuestiones clave (KAM).
+                                </li><li><strong>Comunicar:</strong> Describir esas KAM en el informe de auditoría.</li>
+                            </ol>
+                        </div>
+                        <div class="example">
+                            <strong>Ejemplo:</strong> El objetivo del auditor es: 1) Hacer una lista de los 3-5 temas más difíciles de la auditoría (Ej. la provisión para un juicio legal). 2) Redactar un párrafo claro para cada uno en el informe final.
+                        </div>
+                    </div>
+                </li>
+                
+                <!-- === Nodo 3: Definición === -->
+                <li>
+                    <div class="node-content">
+                        <h2>Definición</h2>
+                        <ul class="sub-node-list">
+                            <li class="sub-node">
+                                <h3>Cuestiones clave de la auditoría:</h3>
+                                <div class="explanation">
+                                    <strong>Explicación:</strong> Son los temas que, según el *juicio profesional* del auditor, fueron los *más importantes* (de mayor significatividad) durante la auditoría. No son todos los temas, solo los "TOP". Se eligen de una lista de temas que el auditor ya discutió con los directivos (el gobierno de la entidad).
+                                </div>
+                                <div class="example">
+                                    <strong>Ejemplo:</strong> El auditor habló con la gerencia sobre 10 temas, pero determina que solo 3 son "clave" (KAM): 1) El riesgo de que el inventario de bebidas caduque, 2) Un nuevo litigio legal millonario, y 3) La valoración de la maquinaria de la fábrica.
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- === Nodo 4: Requerimientos === -->
+                <li>
+                    <div class="node-content">
+                        <h2>Requerimientos</h2>
+                        <ul class="sub-node-list">
+                            <!-- Sub-nodo: Determinación -->
+                            <li class="sub-node">
+                                <h3>Determinación de las cuestiones clave de la auditoría</h3>
+                                <div class="explanation">
+                                    <strong>Explicación:</strong> Es el "filtro" para encontrar las KAM. El auditor *debe* analizar los temas que comunicó a la dirección y considerar 3 cosas:
+                                    <br>a) Áreas de mayor riesgo (Ej. riesgo de fraude).
+                                    <br>b) Áreas de juicio significativo (Ej. estimaciones contables).
+                                    <br>c) El efecto de hechos o transacciones importantes (Ej. comprar otra empresa).
+                                </div>
+                                <div class="example">
+                                    <strong>Ejemplo (Fábrica de bebidas):</strong> El auditor revisa todo y se enfoca en:
+                                    <br>a) El riesgo de que la empresa esté registrando ventas ficticias (Alto Riesgo).
+                                    <br>b) La gerencia "estimó" que las nuevas máquinas embotelladoras durarán 20 años (Juicio).
+                                    <br>c) La empresa compró a su competidor "Bebidas La Roca" (Evento).
+                                    <br>De estos 3, decide que (b) y (c) son las KAM.
+                                </div>
+                            </li>
+                            <!-- Sub-nodo: Comunicación -->
+                            <li class="sub-node">
+                                <h3>Comunicación de las cuestiones clave de la auditoría</h3>
+                                <div class="explanation">
+                                    <strong>Explicación:</strong> El auditor debe crear una sección especial en su informe llamada "Cuestiones clave de la auditoría". Para cada KAM, debe explicar:
+                                    <br>a) *Por qué* fue una cuestión clave (la razón de su importancia).
+                                    <br>b) *Cómo* trató el tema en la auditoría (qué procedimientos hizo).
+                                </div>
+                                <div class="example">
+                                    <strong>Ejemplo (Informe):</strong> "<u>Cuestión Clave:</u> Valoración de maquinaria. <u>Por qué:</u> La vida útil de 20 años estimada por la gerencia es un juicio complejo. <u>Cómo lo audité:</u> Comparamos la estimación con los manuales del fabricante y trajimos un experto en maquinaria para evaluar el desgaste."
+                                </div>
+                            </li>
+                            <!-- Sub-nodo: Comunicación con Gobierno -->
+                            <li class="sub-node">
+                                <h3>Comunicación con los responsables del gobierno de la entidad</h3>
+                                <div class="explanation">
+                                    <strong>Explicación:</strong> El auditor no puede "sorprender" a los directivos en el informe final. Debe discutir con ellos *primero* cuáles serán las KAM que piensa comunicar (o si, en un caso raro, determina que no hay ninguna KAM).
+                                </div>
+                                <div class="example">
+                                    <strong>Ejemplo:</strong> En la reunión de cierre, el auditor le dice al Consejo Directivo: "Estos son los 2 temas que hemos determinado como KAM y que se incluirán en nuestro informe. Quería discutirlo con ustedes primero."
+                                </div>
+                            </li>
+                            <!-- Sub-nodo: Documentación -->
+                            <li class="sub-node">
+                                <h3>Documentación</h3>
+                                <div class="explanation">
+                                    <strong>Explicación:</strong> El auditor debe dejar evidencia en sus "papeles de trabajo" (archivos de auditoría) que explique su razonamiento. Debe documentar:
+                                    <br>a) Por qué eligió esas KAM (y por qué descartó otras).
+                                    <br>b) Si determinó que no había KAM, por qué.
+                                    <br>c) Si decidió no comunicar una KAM (caso muy raro), por qué.
+                                </div>
+                                <div class="example">
+                                    <strong>Ejemplo:</strong> El auditor escribe un memo interno: "Se consideró el Riesgo de Ventas (Tema A), pero se descartó como KAM porque los controles eran fuertes. Se eligió la Vida Útil de Maquinaria (Tema B) por ser el juicio más significativo de la gerencia."
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                
+                <!-- === Nodo 5: Guía de Aplicación === -->
+                <li>
+                    <div class="node-content">
+                        <h2>Guía de aplicación y otras anotaciones explicativas</h2>
+                        <div class="explanation">
+                            <strong>Explicación:</strong> Esta sección (Apartados A1-A64) no añade nuevas reglas, sino que ofrece explicaciones, contexto y ejemplos detallados sobre *cómo* aplicar cada uno de los requerimientos (del 9 al 18). Es la "letra pequeña" que guía el juicio profesional del auditor.
+                        </div>
+                        <div class="example">
+                            <strong>Ejemplo:</strong> Si el auditor tiene dudas sobre qué tan detallada debe ser su explicación en el informe (Requerimiento 13), la Guía (Apartados A46-A51) le da consejos sobre cómo ser claro sin revelar información confidencial de la empresa.
+                        </div>
+                    </div>
+                </li>
+                
+                <!-- === Nodo 6: Caso Práctico === -->
+                <li class="case-study">
+                    <div class="node-content">
+                        <h2>Caso Práctico: "Bebidas Refrescantes del Norte S.A."</h2>
+                        <div class="case-study-content">
+                            <h3>Contexto de la Auditoría</h3>
+                            <p>Usted (Nathaly Pérez) está auditando "Bebidas Refrescantes del Norte SA." para el año finalizado el 31 de diciembre. La empresa fabrica jugos y gaseosas.</p>
+                            
+                            <div class="step">
+                                <strong>Paso 1: Identificar áreas de atención significativa</strong>
+                                <p>Durante la auditoría, usted identifica 3 temas complejos que discutió con la gerencia:</p>
+                                <ul>
+                                    <li><strong>Tema A (Juicio):</strong> La empresa lanzó una nueva "Gaseosa Tropical" y gastó Q15 millones en publicidad. La gerencia decidió capitalizar Q10 millones como "Activo Intangible - Marca en Desarrollo", argumentando que generará ventas por 10 años. La valoración es muy subjetiva.</li>
+                                    <li><strong>Tema B (Riesgo):</strong> El gobierno acaba de aprobar un nuevo impuesto específico a bebidas azucaradas. La empresa ha registrado una provisión de Q5 millones, pero sus cálculos son confusos y usted cree que la obligación podría ser mucho mayor (hasta Q20 millones).</li>
+                                    <li><strong>Tema C (Evento):</strong> La empresa firmó un nuevo contrato de suministro exclusivo de botellas de vidrio con un proveedor que tuvo problemas de calidad, pero es más barato.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="step">
+                                <strong>Paso 2: Determinar las KAM (las de MAYOR significatividad)</strong>
+                                <p>Usted aplica su juicio (Req. 10):</p>
+                                <ul>
+                                    <li>El <strong>Tema A (Valoración de Marca)</strong> es una KAM. Requiere un juicio muy significativo de la gerencia y es difícil de auditar.</li>
+                                    <li>El <strong>Tema B (Nuevo Impuesto)</strong> es una KAM. Es un riesgo de incorrección material alto debido a la incertidumbre del cálculo.</li>
+                                    <li>El <strong>Tema C (Contrato)</strong> es un tema operativo importante, pero no genera un riesgo significativo *en los estados financieros de este año*. Se descarta como KAM.</li>
+                                </ul>
+                            </div>
+                            
+                            <div class="step">
+                                <strong>Paso 3: Comunicar (Req. 13) y Documentar (Req. 18)</strong>
+                                <p>Usted habla con el Consejo Directivo (Req. 17), documenta por qué A y B son KAM y C no lo es (Req. 18), y prepara la sección del informe de auditoría (ver ejemplo abajo).</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                
+                <!-- === Nodo 7: Informe de Auditoría === -->
+                <li class="audit-report">
+                    <div class="node-content">
+                        <h2>Ejemplo: Fragmento del Informe de Auditoría</h2>
+                        <div class="audit-report-example">
+                            <h4>Cuestiones clave de la auditoría</h4>
+                            <p>Las cuestiones clave de la auditoría son aquellas cuestiones que, según nuestro juicio profesional, han sido de la mayor significatividad en nuestra auditoría de los estados financieros del periodo actual. Estas cuestiones han sido tratadas en el contexto de nuestra auditoría de los estados financieros en su conjunto...</p>
+                            
+                            <hr>
+                            
+                            <p><strong>1. Valoración del activo intangible "Gaseosa Tropical"</strong></p>
+                            <p><strong>Por qué fue una cuestión clave:</strong><br>
+                            La Sociedad capitalizó Q10 millones como un activo intangible por el desarrollo de su nueva marca. Esta valoración se basa en supuestos significativos de la dirección, especialmente las proyecciones de ventas futuras y la vida útil de 10 años asignada a la marca. La naturaleza subjetiva de estos supuestos genera un riesgo alto de sobrevaloración del activo.</p>
+                            
+                            <p><strong>Cómo se ha tratado la cuestión en la auditoría:</strong><br>
+                            Nuestros procedimientos incluyeron, entre otros, la evaluación de la metodología de valoración utilizada por la dirección. Involucramos a nuestros especialistas internos en valoración para analizar la razonabilidad de las proyecciones de ingresos y la tasa de descuento aplicada. También comparamos la vida útil asignada con la de productos similares en el sector.</p>
+                            
+                            <p><strong>2. Provisión por el nuevo impuesto a bebidas azucaradas</strong></p>
+                            <p><strong>Por qué fue una cuestión clave:</strong><br>
+                            Durante el año, se aprobó una nueva ley fiscal... La Sociedad registró una provisión de Q5 millones. Determinar el importe final es complejo ya que la interpretación de la ley es ambigua y el cálculo depende de múltiples variables de producción. Existe un riesgo de que la provisión esté subestimada.</p>
+                            
+                            <p><strong>Cómo se ha tratado la cuestión en la auditoría:</strong><br>
+                            Involucramos a nuestros especialistas fiscales para analizar la nueva legislación y su aplicabilidad a los productos de la Sociedad. Recalculamos la provisión de forma independiente basándonos en los volúmenes de producción auditados y retamos los supuestos de la dirección sobre la interpretación de la norma.</p>
+                        </div>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- === Pie de Página === -->
+        <footer>
+            <p>Creado por Nathaly Jasmin Pérez Girón, NIA's II, Sección "C"</p>
+        </footer>
+
+    </div>
+
+
+
+
+</body></html>
