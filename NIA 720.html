@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<!-- saved from url=(0132)blob:https://57rl6wfaf3qlahe1pj1hkugu4iztlckr69kpvo2pw3uczggm1u-h827969114.scf.usercontent.goog/4c5e843b-a8d2-469c-9bee-e403fd43358c -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script>(function(firebaseConfig, initialAuthToken, appId) {
+        window.__firebase_config = firebaseConfig;
+        window.__initial_auth_token = initialAuthToken;
+        window.__app_id = appId;
+            })("\n{\n  \"apiKey\": \"AIzaSyCqyCcs2R2e7AegGjvFAwG98wlamtbHvZY\",\n  \"authDomain\": \"bard-frontend.firebaseapp.com\",\n  \"projectId\": \"bard-frontend\",\n  \"storageBucket\": \"bard-frontend.firebasestorage.app\",\n  \"messagingSenderId\": \"175205271074\",\n  \"appId\": \"1:175205271074:web:2b7bd4d34d33bf38e6ec7b\"\n}\n","eyJhbGciOiJSUzI1NiIsImtpZCI6ImQzNTlhZTBjMTczYzc3YjFjZDU1MjFiMjVhMWY2YTQ5ZWU1YTZkMjQiLCJ0eXAiOiJKV1QifQ.eyJzdWIiOiJmaXJlYmFzZS1hZG1pbnNkay1mYnN2Y0BiYXJkLWZyb250ZW5kLmlhbS5nc2VydmljZWFjY291bnQuY29tIiwiYXVkIjoiaHR0cHM6Ly9pZGVudGl0eXRvb2xraXQuZ29vZ2xlYXBpcy5jb20vZ29vZ2xlLmlkZW50aXR5LmlkZW50aXR5dG9vbGtpdC52MS5JZGVudGl0eVRvb2xraXQiLCJ1aWQiOiIxODI0ODcwODU0MTA3MjE5NzU2NyIsImlzcyI6ImZpcmViYXNlLWFkbWluc2RrLWZic3ZjQGJhcmQtZnJvbnRlbmQuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLCJjbGFpbXMiOnsiYXBwSWQiOiJjX2Q2OWU0YWI3YTFlMDg1YmJfaW5mb2dyYWZpYV9uaWFfNzIwLmh0bWwtMzI5In0sImV4cCI6MTc2MjU2OTYxNSwiaWF0IjoxNzYyNTY2MDE1LCJhbGciOiJSUzI1NiJ9.uvz6ysVrlRVy2niPCqVQZ0qm-GZXOYUwndP_PUMxep6r-iYG_4QoibpCvZMGFu_ALf9BJOy1l3hl037aThYRJa2W3Fi6vgI0G5J4X6OlRqUtJvlswHISgBcH_bUR867TFOj3SPGSqjKJODmXPUikbuE0_CRIiTLIA0I0EWVvKIPMYsPjy2rX3jZCl4O9u5YxPIRksmFG8D00KBA3tav4EzRvX3PL_3FYgBV8852Wxt2y4iAZsylr-SlewgjCngwtEVrbFn-MfC5JwxJxRgWGt5V85uyj7qCSzc47aWNnJFDVrFf8VSFZebX5QXsD8xetZYLrIUnODpeNX0AIF6B1uw","c_d69e4ab7a1e085bb_infografia_nia_720.html-329")</script><script>'use strict';var h=typeof Object.defineProperties=="function"?Object.defineProperty:function(a,b,d){if(a==Array.prototype||a==Object.prototype)return a;a[b]=d.value;return a};function l(a){a=["object"==typeof globalThis&&globalThis,a,"object"==typeof window&&window,"object"==typeof self&&self,"object"==typeof global&&global];for(var b=0;b<a.length;++b){var d=a[b];if(d&&d.Math==Math)return d}throw Error("Cannot find global object");}var n=l(this);
+function p(a,b){if(b)a:{var d=n;a=a.split(".");for(var c=0;c<a.length-1;c++){var e=a[c];if(!(e in d))break a;d=d[e]}a=a[a.length-1];c=d[a];b=b(c);b!=c&&b!=null&&h(d,a,{configurable:!0,writable:!0,value:b})}}function r(a){function b(c){return a.next(c)}function d(c){return a.throw(c)}return new Promise(function(c,e){function f(g){g.done?c(g.value):Promise.resolve(g.value).then(b,d).then(f,e)}f(a.next())})}function t(a){return r(a())}
+p("Object.values",function(a){return a?a:function(b){var d=[],c;for(c in b)Object.prototype.hasOwnProperty.call(b,c)&&d.push(b[c]);return d}});p("Array.prototype.includes",function(a){return a?a:function(b,d){var c=this;c instanceof String&&(c=String(c));var e=c.length;d=d||0;for(d<0&&(d=Math.max(d+e,0));d<e;d++){var f=c[d];if(f===b||Object.is(f,b))return!0}return!1}});/*
+
+ MIT License
+
+ Copyright (c) 2017-2023 W.Y.
+
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to deal
+ in the Software without restriction, including without limitation the rights
+ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ SOFTWARE.
+
+*/
+function u(a,b){const d=a.style;b.backgroundColor&&(d.backgroundColor=b.backgroundColor);b.width&&(d.width=`${b.width}px`);b.height&&(d.height=`${b.height}px`);const c=b.style;c!=null&&Object.keys(c).forEach(e=>{d[e]=c[e]})};var v=(()=>{let a=0;return()=>{a+=1;return`u${`0000${(Math.random()*1679616<<0).toString(36)}`.slice(-4)}${a}`}})();function w(a){const b=[];for(let d=0,c=a.length;d<c;d++)b.push(a[d]);return b}let x=null;function y(a={}){return x?x:a.l?x=a.l:x=w(window.getComputedStyle(document.documentElement))}function z(a,b){return(a=(a.ownerDocument.defaultView||window).getComputedStyle(a).getPropertyValue(b))?parseFloat(a.replace("px","")):0}
+function A(a,b={}){var d;if(!(d=b.width)){d=z(a,"border-left-width");var c=z(a,"border-right-width");d=a.clientWidth+d+c}(b=b.height)||(b=z(a,"border-top-width"),c=z(a,"border-bottom-width"),b=a.clientHeight+b+c);return{width:d,height:b}}function B(a){return new Promise((b,d)=>{const c=new Image;c.onload=()=>{c.decode().then(()=>{requestAnimationFrame(()=>b(c))})};c.onerror=d;c.crossOrigin="anonymous";c.decoding="async";c.src=a})}
+function C(a){return t(function*(){return Promise.resolve().then(()=>(new XMLSerializer).serializeToString(a)).then(encodeURIComponent).then(b=>`data:image/svg+xml;charset=utf-8,${b}`)})}
+function D(a,b,d){return t(function*(){const c=document.createElementNS("http://www.w3.org/2000/svg","svg"),e=document.createElementNS("http://www.w3.org/2000/svg","foreignObject");c.setAttribute("width",`${b}`);c.setAttribute("height",`${d}`);c.setAttribute("viewBox",`0 0 ${b} ${d}`);e.setAttribute("width","100%");e.setAttribute("height","100%");e.setAttribute("x","0");e.setAttribute("y","0");e.setAttribute("externalResourcesRequired","true");c.appendChild(e);e.appendChild(a);return C(c)})}
+var E=(a,b)=>{if(a instanceof b)return!0;a=Object.getPrototypeOf(a);return a===null?!1:a.constructor.name===b.name||E(a,b)};function F(a,b){return y(b).map(d=>{const c=a.getPropertyValue(d),e=a.getPropertyPriority(d);return`${d}: ${c}${e?" !important":""};`}).join(" ")}
+function G(a,b,d,c){a=window.getComputedStyle(a,d);var e=a.getPropertyValue("content");if(e!==""&&e!=="none"){var f=v();try{b.className=`${b.className} ${f}`}catch(k){return}e=document.createElement("style");var g=e.appendChild;d=`.${f}:${d}`;a.cssText?(c=a.getPropertyValue("content"),c=`${a.cssText} content: '${c.replace(/'|"/g,"")}';`):c=F(a,c);g.call(e,document.createTextNode(`${d}{${c}}`));b.appendChild(e)}};function H(a){return a.search(/^(data:)/)!==-1}function I(a,b,d){return t(function*(){const c=yield fetch(a,b);if(c.status===404)throw Error(`Resource "${c.url}" not found`);const e=yield c.blob();return new Promise((f,g)=>{const k=new FileReader;k.onerror=g;k.onloadend=()=>{try{f(d({o:c,result:k.result}))}catch(m){g(m)}};k.readAsDataURL(e)})})}const J={};function K(a,b,d){let c=a.replace(/\?.*/,"");d&&(c=a);/ttf|otf|eot|woff2?/i.test(c)&&(c=c.replace(/.*\//,""));return b?`[${b}]${c}`:c}
+function L(a,b,d){return t(function*(){const c=K(a,b,d.C);if(J[c]!=null)return J[c];d.u&&(a+=(/\?/.test(a)?"&":"?")+(new Date).getTime());let e;try{const f=yield I(a,d.i,({o:g,result:k})=>{b||(b=g.headers.get("Content-Type")||"");return k.split(/,/)[1]});e=`data:${b};base64,${f}`}catch(f){e=d.B||""}return J[c]=e})};const M={P:"application/font-woff",R:"application/font-woff",N:"application/font-truetype",v:"application/vnd.ms-fontobject",H:"image/png",F:"image/jpeg",D:"image/jpeg",A:"image/gif",M:"image/tiff",L:"image/svg+xml",O:"image/webp"};function N(a){return(a=/\.([^./]*?)$/g.exec(a))?a[1]:""};function O(a){return t(function*(){const b=a.toDataURL();return b==="data:,"?a.cloneNode(!1):B(b)})}function aa(a,b){return t(function*(){if(a.currentSrc){var d=document.createElement("canvas");const c=d.getContext("2d");d.width=a.clientWidth;d.height=a.clientHeight;c==null||c.drawImage(a,0,0,d.width,d.height);d=d.toDataURL();return B(d)}d=a.poster;d=yield L(d,M[N(d).toLowerCase()]||"",b);return B(d)})}
+function ba(a,b){return t(function*(){try{let d;if(a==null?0:(d=a.contentDocument)==null?0:d.body)return yield P(a.contentDocument.body,b,!0)}catch(d){}return a.cloneNode(!1)})}function ca(a,b){return t(function*(){return E(a,HTMLCanvasElement)?O(a):E(a,HTMLVideoElement)?aa(a,b):E(a,HTMLIFrameElement)?ba(a,b):a.cloneNode(a.tagName!=null&&a.tagName.toUpperCase()==="SVG")})}
+function da(a,b,d){return t(function*(){if(b.tagName!=null&&b.tagName.toUpperCase()==="SVG")return b;let c=[];if(a.tagName!=null&&a.tagName.toUpperCase()==="SLOT"&&a.assignedNodes)c=w(a.assignedNodes());else{let e;if(E(a,HTMLIFrameElement)&&((e=a.contentDocument)==null?0:e.body))c=w(a.contentDocument.body.childNodes);else{let f;c=w(((f=a.shadowRoot)!=null?f:a).childNodes)}}if(c.length===0||E(a,HTMLVideoElement))return b;yield c.reduce((e,f)=>e.then(()=>P(f,d)).then(g=>{g&&b.appendChild(g)}),Promise.resolve());
+return b})}function ea(a,b,d){const c=b.style;if(c){var e=window.getComputedStyle(a);e.cssText?(c.cssText=e.cssText,c.transformOrigin=e.transformOrigin):y(d).forEach(f=>{let g=e.getPropertyValue(f);f==="font-size"&&g.endsWith("px")&&(g=`${Math.floor(parseFloat(g.substring(0,g.length-2)))-.1}px`);E(a,HTMLIFrameElement)&&f==="display"&&g==="inline"&&(g="block");f==="d"&&b.getAttribute("d")&&(g=`path(${b.getAttribute("d")})`);c.setProperty(f,g,e.getPropertyPriority(f))})}}
+function fa(a,b){E(a,HTMLSelectElement)&&(b=Array.from(b.children).find(d=>a.value===d.getAttribute("value")))&&b.setAttribute("selected","")}
+function ha(a,b){return t(function*(){var d=a.querySelectorAll?a.querySelectorAll("use"):[];if(d.length===0)return a;var c={};for(var e=0;e<d.length;e++){var f=d[e].getAttribute("xlink:href");if(f){const g=document.querySelector(f);a.querySelector(f)||!g||c[f]||(c[f]=yield P(g,b,!0))}}d=Object.values(c);if(d.length){c=document.createElementNS("http://www.w3.org/1999/xhtml","svg");c.setAttribute("xmlns","http://www.w3.org/1999/xhtml");c.style.position="absolute";c.style.width="0";c.style.height="0";
+c.style.overflow="hidden";c.style.display="none";e=document.createElementNS("http://www.w3.org/1999/xhtml","defs");c.appendChild(e);for(f=0;f<d.length;f++)e.appendChild(d[f]);a.appendChild(c)}return a})}
+function P(a,b,d){return t(function*(){return d||!b.filter||b.filter(a)?Promise.resolve(a).then(c=>ca(c,b)).then(c=>da(a,c,b)).then(c=>{E(c,Element)&&(ea(a,c,b),G(a,c,":before",b),G(a,c,":after",b),E(a,HTMLTextAreaElement)&&(c.textContent=a.value),E(a,HTMLInputElement)&&c.setAttribute("value",a.value),fa(a,c));return c}).then(c=>ha(c,b)):null})};const Q=/url\((['"]?)([^'"]+?)\1\)/g,ia=/url\([^)]+\)\s*format\((["']?)([^"']+)\1\)/g,ja=/src:\s*(?:url\([^)]+\)\s*format\([^)]+\)[,;]\s*)+/g;function ka(a){const b=[];a.replace(Q,(d,c,e)=>{b.push(e);return d});return b.filter(d=>!H(d))}
+function la(a,b,d,c){return t(function*(){try{const e=d?(new URL(b,d||void 0)).toString():b;let f;f=yield L(e,M[N(b).toLowerCase()]||"",c);return a.replace(new RegExp(`(url\\(['"]?)(${b.replace(/([.*+?^${}()|\[\]\/\\])/g,"\\$1")})(['"]?\\))`,"g"),`$1${f}$3`)}catch(e){}return a})}function ma(a,{I:b}){return b?a.replace(ja,d=>{for(;;){const [c,,e]=ia.exec(d)||[],f=c,g=e;if(!g)return"";if(g===b)return`src: ${f};`}}):a}
+function R(a,b,d){return t(function*(){if(a.search(Q)===-1)return a;const c=ma(a,d);return ka(c).reduce((e,f)=>e.then(g=>la(g,f,b,d)),Promise.resolve(c))})};function S(a,b,d){return t(function*(){var c;const e=(c=b.style)==null?void 0:c.getPropertyValue(a);return e?(c=yield R(e,null,d),b.style.setProperty(a,c,b.style.getPropertyPriority(a)),!0):!1})}function na(a,b){return t(function*(){(yield S("background",a,b))||(yield S("background-image",a,b));(yield S("mask",a,b))||(yield S("-webkit-mask",a,b))||(yield S("mask-image",a,b))||(yield S("-webkit-mask-image",a,b))})}
+function oa(a,b){return t(function*(){const d=E(a,HTMLImageElement);if(d&&!H(a.src)||E(a,SVGImageElement)&&!H(a.href.baseVal)){var c=d?a.src:a.href.baseVal,e=yield L(c,M[N(c).toLowerCase()]||"",b);yield new Promise((f,g)=>{a.onload=f;a.onerror=b.m?(...k)=>{try{f(b.m(...k))}catch(m){g(m)}}:g;a.decode&&(a.decode=f);a.loading==="lazy"&&(a.loading="eager");d?(a.srcset="",a.src=e):a.href.baseVal=e})}})}
+function pa(a,b){return t(function*(){const d=w(a.childNodes).map(c=>T(c,b));yield Promise.all(d).then(()=>a)})}function T(a,b){return t(function*(){E(a,Element)&&(yield na(a,b),yield oa(a,b),yield pa(a,b))})};const U={};function V(a){return t(function*(){var b=U[a];if(b!=null)return b;b=yield(yield fetch(a)).text();b={url:a,cssText:b};return U[a]=b})}function W(a,b){return t(function*(){let d=a.cssText;const c=/url\(["']?([^"')]+)["']?\)/g,e=(d.match(/url\([^)]+\)/g)||[]).map(f=>t(function*(){let g=f.replace(c,"$1");g.startsWith("https://")||(g=(new URL(g,a.url)).href);return I(g,b.i,({result:k})=>{d=d.replace(f,`url(${k})`);return[f,k]})}));return Promise.all(e).then(()=>d)})}
+function X(a){if(a==null)return[];const b=[];a=a.replace(/(\/\*[\s\S]*?\*\/)/gi,"");for(var d=RegExp("((@.*?keyframes [\\s\\S]*?){([\\s\\S]*?}\\s*?)})","gi");;){var c=d.exec(a);if(c===null)break;b.push(c[0])}a=a.replace(d,"");d=/@import[\s\S]*?url\([^)]*\)[\s\S]*?;/gi;for(c=RegExp("((\\s*?(?:\\/\\*[\\s\\S]*?\\*\\/)?\\s*?@media[\\s\\S]*?){([\\s\\S]*?)}\\s*?})|(([\\s\\S]*?){([\\s\\S]*?)})","gi");;){let e=d.exec(a);if(e===null)if(e=c.exec(a),e===null)break;else d.lastIndex=c.lastIndex;else c.lastIndex=
+d.lastIndex;b.push(e[0])}return b}
+function qa(a,b){return t(function*(){const d=[],c=[];a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach((f,g)=>{if(f.type===CSSRule.IMPORT_RULE){let k=g+1;f=V(f.href).then(m=>W(m,b)).then(m=>X(m).forEach(q=>{try{e.insertRule(q,q.startsWith("@import")?k+=1:e.cssRules.length)}catch(Da){}})).catch(()=>{});c.push(f)}})}catch(f){const g=a.find(k=>k.href==null)||document.styleSheets[0];e.href!=null&&c.push(V(e.href).then(k=>W(k,b)).then(k=>X(k).forEach(m=>{g.insertRule(m,g.cssRules.length)})).catch(()=>
+{}))}});return Promise.all(c).then(()=>{a.forEach(e=>{if("cssRules"in e)try{w(e.cssRules||[]).forEach(f=>{d.push(f)})}catch(f){}});return d})})}function ra(a){return a.filter(b=>b.type===CSSRule.FONT_FACE_RULE).filter(b=>b.style.getPropertyValue("src").search(Q)!==-1)}function sa(a,b){return t(function*(){if(a.ownerDocument==null)throw Error("Provided element is not within a Document");var d=w(a.ownerDocument.styleSheets);d=yield qa(d,b);return ra(d)})}
+function ta(a){function b(c){(c.style.fontFamily||getComputedStyle(c).fontFamily).split(",").forEach(e=>{d.add(e.trim().replace(/["']/g,""))});Array.from(c.children).forEach(e=>{e instanceof HTMLElement&&b(e)})}const d=new Set;b(a);return d}function ua(a,b){return t(function*(){const d=yield sa(a,b),c=ta(a);return(yield Promise.all(d.filter(e=>c.has(e.style.fontFamily.trim().replace(/["']/g,""))).map(e=>R(e.cssText,e.parentStyleSheet?e.parentStyleSheet.href:null,b)))).join("\n")})}
+function va(a,b){return t(function*(){const d=b.j!=null?b.j:b.K?null:yield ua(a,b);if(d){const c=document.createElement("style");c.appendChild(document.createTextNode(d));a.firstChild?a.insertBefore(c,a.firstChild):a.appendChild(c)}})};function wa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b),e=yield P(a,b,!0);yield va(e,b);yield T(e,b);u(e,b);return yield D(e,d,c)})}
+function xa(a,b={}){return t(function*(){const {width:d,height:c}=A(a,b);var e=yield wa(a,b);e=yield B(e);const f=document.createElement("canvas"),g=f.getContext("2d"),k=b.G||window.devicePixelRatio||1,m=b.h||d,q=b.g||c;f.width=m*k;f.height=q*k;!b.J&&(f.width>16384||f.height>16384)&&(f.width>16384&&f.height>16384?f.width>f.height?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=16384):f.width>16384?(f.height*=16384/f.width,f.width=16384):(f.width*=16384/f.height,f.height=
+16384));f.style.width=`${m}`;f.style.height=`${q}`;b.backgroundColor&&(g.fillStyle=b.backgroundColor,g.fillRect(0,0,f.width,f.height));g.drawImage(e,0,0,f.width,f.height);return f})}function ya(a,b={}){return t(function*(){return(yield xa(a,b)).toDataURL()})};const za=["gemini.google.com","corp.google.com","proxy.googlers.com"];function Y(){return document.body.querySelectorAll('[class*="animate"]').length>0}function Z(a){return t(function*(){try{return yield ya(a,{h:a.offsetWidth,g:a.offsetHeight})}catch(d){var b=a.offsetHeight;const c=document.createElement("canvas");c.width=a.offsetWidth;c.height=b;return c.toDataURL("image/png")}})}
+function Aa(){return t(function*(){const a=document.body.offsetWidth,b=document.body.offsetHeight,d=document.body.cloneNode(!0);d.querySelectorAll('[class*="animate"]').forEach(c=>{c.classList.remove(...Array.from(c.classList).filter(e=>e.startsWith("animate")))});d.style.width=`${a}px`;d.style.height=`${b}px`;return d})}
+function Ba(a){return t(function*(){let b=document.body;if(Y()){var d=yield Aa();b=d;document.body.appendChild(d)}d=yield Z(b);Y()&&document.body.removeChild(b);window.parent.postMessage({type:"SEND_SCREENSHOT",image:d,topOffset:document.documentElement.scrollTop},a.origin)})}function Ca(a){return t(function*(){const b={type:"SEND_SCREENSHOT_FOR_DATA_VISUALIZATION",image:yield Z(document.body),topOffset:0};window.parent.postMessage(b,a.origin)})}
+window.addEventListener("message",a=>t(function*(){if(za.some(d=>a.origin.includes(d))){var b=a.data;b&&(b.type==="MAKE_SCREENSHOT"&&(yield Ba(a)),b.type==="MAKE_SCREENSHOT_FOR_DATA_VISUALIZATION"&&(yield Ca(a)))}}));
+</script><script>(function() {
+  // Ensure this script is executed only once
+  if (window.firebaseAuthBridgeScriptLoaded) {
+    return;
+  }
+  window.firebaseAuthBridgeScriptLoaded = true;
+
+  let nextTokenPromiseId = 0;
+
+  // Stores { resolve, reject } for ongoing token requests
+  const pendingTokenPromises = {};
+
+  // Listen for messages from the Host Application
+  window.addEventListener('message', function(event) {
+
+    const messageData = event.data;
+
+  if (messageData && messageData.type === 'RESOLVE_NEW_FIREBASE_TOKEN') {
+      const { success, token, error, promiseId } = messageData ?? {};
+      if (pendingTokenPromises[promiseId]) {
+        if (success) {
+          pendingTokenPromises[promiseId].resolve(token);
+        } else {
+          pendingTokenPromises[promiseId].reject(new Error(error || 'Token refresh failed from host.'));
+        }
+        delete pendingTokenPromises[promiseId];
+      }
+    }
+  });
+
+  // Expose a function for the Generated App to request a new Firebase token
+  window.requestNewFirebaseToken = function() {
+    const currentPromiseId = nextTokenPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingTokenPromises[currentPromiseId] = { resolve, reject };
+    });
+    if (window.parent && window.parent !== window) {
+      window.parent.postMessage({
+        type: 'REQUEST_NEW_FIREBASE_TOKEN',
+        promiseId: currentPromiseId
+      }, '*');
+    } else {
+      pendingTokenPromises[currentPromiseId].reject(new Error('No parent window to request token from.'));
+      delete pendingTokenPromises[currentPromiseId];
+    }
+    return promise;
+  };
+})();</script><script>
+let realOriginalGetUserMedia = null;
+if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+  realOriginalGetUserMedia = navigator.mediaDevices.getUserMedia.bind(navigator.mediaDevices);
+}
+
+(function() {
+  if (navigator.mediaDevices && navigator.mediaDevices.__proto__) {
+    try {
+      Object.defineProperty(navigator.mediaDevices.__proto__, 'getUserMedia', {
+        get: function() {
+          return undefined; // Or throw an error
+        },
+        configurable: false
+      });
+    } catch (error) {
+      console.error("Error defining prototype getter:", error);
+    }
+  }
+})();
+
+(function() {
+  const pendingMediaResolvers = {};
+  let nextMediaPromiseId = 0;
+
+  function requestMediaPermissions(constraints) {
+    const mediaPromiseId = nextMediaPromiseId++;
+    const promise = new Promise((resolve, reject) => {
+      pendingMediaResolvers[mediaPromiseId] = (granted) => {
+        delete pendingMediaResolvers[mediaPromiseId];
+        resolve(granted);
+      };
+    });
+
+    window.parent.postMessage({
+      type: 'requestMediaPermission',
+      constraints: constraints,
+      promiseId: mediaPromiseId,
+    }, '*');
+
+    return promise;
+  }
+
+  let originalGetUserMedia = realOriginalGetUserMedia;
+
+  function interceptGetUserMedia() {
+    if (navigator.mediaDevices) {
+      Object.defineProperty(navigator.mediaDevices, 'getUserMedia', {
+        value: function(constraints) {
+          return requestMediaPermissions(constraints).then((granted) => {
+            if (granted) {
+              if (originalGetUserMedia) {
+                return originalGetUserMedia(constraints);
+              } else {
+                throw new Error("Original getUserMedia not available.");
+              }
+            } else {
+              throw new DOMException('Permission denied', 'NotAllowedError');
+            }
+          });
+        },
+        writable: false,
+        configurable: false
+      });
+    }
+  }
+
+  interceptGetUserMedia();
+
+  const observer = new MutationObserver(function(mutationsList, observer) {
+    for (const mutation of mutationsList) {
+      if (mutation.type === 'reconfigured' && mutation.name === 'getUserMedia' && mutation.object === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'attributes' && mutation.attributeName === 'getUserMedia' && mutation.target === navigator.mediaDevices) {
+        interceptGetUserMedia();
+      } else if (mutation.type === 'childList' && mutation.addedNodes) {
+        mutation.addedNodes.forEach(node => {
+          if (node === navigator.mediaDevices) {
+            interceptGetUserMedia();
+          }
+        });
+      }
+    }
+  });
+
+  function interceptSpeechRecognition() {
+    if (!window.SpeechRecognition && !window.webkitSpeechRecognition) {
+      return;
+    }
+
+    const OriginalSpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+    const SpeechRecognitionWrapper = function(...args) {
+      const recognizer = new OriginalSpeechRecognition(...args);
+      const originalStart = recognizer.start.bind(recognizer);
+
+      recognizer.start = function() {
+        requestMediaPermissions({ audio: true }).then(granted => {
+          if (granted) {
+            originalStart();
+          } else {
+            const errorEvent = new SpeechRecognitionErrorEvent('error');
+            errorEvent.error = 'not-allowed'; // This is the standard error for permission denial.
+            recognizer.dispatchEvent(errorEvent);
+          }
+        });
+      };
+
+      return recognizer;
+    };
+
+    SpeechRecognitionWrapper.prototype = OriginalSpeechRecognition.prototype;
+    SpeechRecognitionWrapper.prototype.constructor = SpeechRecognitionWrapper;
+
+    if (window.SpeechRecognition) {
+      window.SpeechRecognition = SpeechRecognitionWrapper;
+    }
+    if (window.webkitSpeechRecognition) {
+      window.webkitSpeechRecognition = SpeechRecognitionWrapper;
+    }
+  }
+
+  interceptSpeechRecognition();
+
+  window.addEventListener('message', function(event) {
+    if (event.data) {
+      if (event.data.type === 'resolveMediaPermission') {
+        const { promiseId, granted } = event.data;
+        if (pendingMediaResolvers[promiseId]) {
+          pendingMediaResolvers[promiseId](granted);
+        }
+      }
+    }
+  });
+
+})();</script><script>((function(modelInformation) {
+  const originalFetch = window.fetch;
+  // TODO: b/421908508 - Move these out of the script and match all generative AI model calls.
+  let googleLlmBaseApiUrls = [
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':streamGenerateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.textModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.imageEditModelName + ':generateContent',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predict',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.videoModelName + ':predictLongRunning',
+    'https://generativelanguage.googleapis.com/v1beta/models/' + modelInformation.ttsModelName + ':generateContent',
+  ];
+  modelInformation.deprecatedTextModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':streamGenerateContent',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':generateContent',
+    );
+  });
+  modelInformation.deprecatedImageModelNames.forEach((modelName) => {
+    googleLlmBaseApiUrls.push(
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predict',
+      'https://generativelanguage.googleapis.com/v1beta/models/' + modelName + ':predictLongRunning',
+    );
+  });
+
+  const pendingFetchResolvers = {};
+  let nextPromiseId = 0;
+
+  function handleStringInput(input, optionsArgument) {
+    const actualUrl = input;
+    const fetchCallArgs = [actualUrl, optionsArgument];
+    const effectiveOptions = optionsArgument || {};
+    const bodyForApiKeyCheck = effectiveOptions.body;
+    const bodyForPostMessage = effectiveOptions.body;
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  function handleRequestInput(input, optionsArgument) {
+    const actualUrl = input.url;
+    const fetchCallArgs = [input, optionsArgument];
+    const effectiveOptions = { method: input.method, headers: new Headers(input.headers) };
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (optionsArgument) {
+      if (optionsArgument.method) effectiveOptions.method = optionsArgument.method;
+      if (optionsArgument.headers) effectiveOptions.headers = new Headers(optionsArgument.headers);
+      if ('body' in optionsArgument) {
+        bodyForApiKeyCheck = optionsArgument.body;
+        bodyForPostMessage = optionsArgument.body;
+      } else {
+        bodyForApiKeyCheck = undefined;
+        bodyForPostMessage = input.body;
+      }
+    } else {
+      bodyForApiKeyCheck = undefined;
+      bodyForPostMessage = input.body;
+    }
+    return { actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage };
+  }
+
+  window.fetch = function(input, optionsArgument) {
+    let actualUrl;
+    let fetchCallArgs;
+    let effectiveOptions = {};
+    let bodyForApiKeyCheck;
+    let bodyForPostMessage;
+
+    if (typeof input === 'string') {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleStringInput(input, optionsArgument));
+    } else if (input instanceof Request) {
+      ({actualUrl, fetchCallArgs, effectiveOptions, bodyForApiKeyCheck, bodyForPostMessage} = handleRequestInput(input, optionsArgument));
+    } else {
+      return originalFetch.apply(window, [input, optionsArgument]);
+    }
+
+    effectiveOptions.method = effectiveOptions.method || 'GET';
+    if (!effectiveOptions.headers) {
+      effectiveOptions.headers = new Headers();
+    }
+
+
+    if (typeof actualUrl === 'string' && googleLlmBaseApiUrls.some((url) => actualUrl.startsWith(url))) {
+      let apiKeyIsNull = true;
+
+      const regex = new RegExp("models/([^:]+)");
+      const modelNameMatch = actualUrl.match(regex);
+      const modelName = modelNameMatch ? modelNameMatch[1] : 'unspecified';
+
+
+      try {
+        const urlObject = new URL(actualUrl);  // Use URL object for robust parsing
+        const apiKeyParam = urlObject.searchParams.get('key');
+        if (apiKeyParam) {
+          apiKeyIsNull = false;
+        }
+      } catch (e) {
+        // Continue checks even if URL parsing fails
+      }
+
+      if (apiKeyIsNull && effectiveOptions.headers) {
+        const h = new Headers(effectiveOptions.headers);
+        const apiKeyHeaderValue = h.get('X-API-Key') || h.get('x-api-key');
+        if (apiKeyHeaderValue) {
+          apiKeyIsNull = false;
+          return originalFetch.apply(window, fetchCallArgs);
+        }
+      }
+
+      if (apiKeyIsNull && effectiveOptions.method && ['POST', 'PUT', 'PATCH'].includes(effectiveOptions.method.toUpperCase()) && typeof bodyForApiKeyCheck === 'string') {
+        try {
+          const bodyData = JSON.parse(bodyForApiKeyCheck);
+          if (bodyData && bodyData.apiKey) {
+            apiKeyIsNull = false;
+            return originalFetch.apply(window, fetchCallArgs);
+          }
+        } catch (e) {
+          // Ignore JSON parsing errors
+        }
+      }
+
+      if(apiKeyIsNull) {
+        const promiseId = nextPromiseId++;
+        const promise = new Promise((resolve) => {
+          pendingFetchResolvers[promiseId] = (resolvedResponse) => {
+            delete pendingFetchResolvers[promiseId];
+            resolve(resolvedResponse);
+          };
+        });
+
+        let serializedBodyForPostMessage;
+        if (typeof bodyForPostMessage === 'string' || bodyForPostMessage == null) {
+            serializedBodyForPostMessage = bodyForPostMessage;
+        } else if (bodyForPostMessage instanceof ReadableStream) {
+            serializedBodyForPostMessage = null;
+        } else {
+            try {
+                serializedBodyForPostMessage = JSON.stringify(bodyForPostMessage);
+            } catch (e) {
+                serializedBodyForPostMessage = null;
+            }
+        }
+
+        const messageOptions = {
+            method: effectiveOptions.method,
+            headers: Object.fromEntries(new Headers(effectiveOptions.headers).entries()),
+            body: serializedBodyForPostMessage
+        };
+
+        window.parent.postMessage({
+          type: 'requestFetch',
+          url: actualUrl,
+          modelName: modelName,
+          options: messageOptions,
+          promiseId: promiseId,
+        }, '*');
+
+        return promise;
+      }
+      return originalFetch.apply(window, fetchCallArgs);
+    }
+    return originalFetch.apply(window, fetchCallArgs);
+  };
+
+  window.addEventListener('message', function(event) {
+    if (event.data && event.data.type === 'resolveFetch') {
+      const { promiseId, response } = event.data;
+      if (pendingFetchResolvers[promiseId]) {
+        try {
+          const reconstructedResponse = new Response(response.body, {
+            status: response.status,
+            statusText: response.statusText,
+            headers: new Headers(response.headers),
+          });
+          pendingFetchResolvers[promiseId](reconstructedResponse);
+        } catch (error) {
+          pendingFetchResolvers[promiseId](new Response(null, { status: 500, statusText: "Interceptor Response Reconstruction Error" }));
+        }
+      }
+    }
+  });
+
+}))({"textModelName":"gemini-2.5-flash-preview-09-2025","imageModelName":"imagen-4.0-generate-001","imageEditModelName":"gemini-2.5-flash-image-preview","videoModelName":"veo-2.0-generate-001","ttsModelName":"gemini-2.5-flash-preview-tts","deprecatedTextModelNames":["gemini-2.0-flash","gemini-2.5-flash-preview-04-17","gemini-2.5-flash-preview-05-20"],"deprecatedImageModelNames":["imagen-3.0-generate-001","imagen-3.0-generate-002"]})</script><script>(function() {
+  const originalConsoleLog = console.log;
+  const originalConsoleError = console.error;
+
+    /**
+   * Normalizes an error event or a promise rejection reason into a structured error object.
+   * @param {*} errorEventOrReason The error object or reason.
+   * @return {object} Structured error data { message, name, stack }.
+   */
+  function getErrorObject(errorEventOrReason) {
+    if (errorEventOrReason instanceof Error) {
+      return {
+        message: errorEventOrReason.message,
+        name: errorEventOrReason.name,
+        stack: errorEventOrReason.stack,
+      };
+    }
+    // Fallback for non-Error objects.
+    try {
+      return {
+        message: JSON.stringify(errorEventOrReason),
+        name: 'UnknownErrorType',
+        stack: null,
+      };
+    } catch (e) {
+      return {
+        message: String(errorEventOrReason),
+        name: 'UnknownErrorTypeNonStringifiable',
+        stack: null,
+      };
+    }
+  }
+
+  /**
+   * Converts an array of arguments (from log/error) into a single string.
+   * Handles Error objects specially to include their message and stack.
+   * @param {Array<*>} args - Arguments passed to console methods.
+   * @return {string} A string representation of the arguments.
+   */
+  function stringifyArgs(args) {
+    return args
+      .map((arg) => {
+        if (arg instanceof Error) {
+          const {message, stack} = arg;
+          return `Error: ${message}${stack ? ('\nStack: ' + stack) : ''}`;
+        }
+        if (typeof arg === 'object' && arg !== null) {
+          try {
+            return JSON.stringify(arg);
+          } catch (error) {
+            return '[Circular Object]';
+          }
+        } else {
+          return String(arg);
+        }
+      })
+      .join(' ');
+  }
+
+  console.log = function(...args) {
+    const logString = stringifyArgs(args);
+    window.parent.postMessage({ type: 'log', message: logString }, '*');
+    originalConsoleLog.apply(console, args);
+  };
+
+  console.error = function(...args) {
+    let errorData;
+    if (args.length > 0 && args[0] instanceof Error) {
+      const err = args[0];
+      // If the first arg is an Error, capture its details.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        ...getErrorObject(err),
+        rawArgsString: stringifyArgs(args.slice(1)),
+        timestamp: new Date().toISOString(),
+      };
+    } else {
+      // If not an Error object, treat all args as a general error message.
+      errorData = {
+        type: 'error',
+        source: 'CONSOLE_ERROR',
+        message: stringifyArgs(args),
+        name: 'ConsoleLoggedError',
+        stack: null,
+        timestamp: new Date().toISOString(),
+      };
+    }
+    window.parent.postMessage(errorData, '*');
+    originalConsoleError.apply(console, args);
+  };
+
+  // Listen for global unhandled synchronous errors.
+  window.addEventListener('error', function(event) {
+    const errorDetails = event.error ? getErrorObject(event.error) : {
+      message: event.message,
+      name: 'GlobalError',
+      stack: null,
+      filename: event.filename,
+      lineno: event.lineno,
+      colno: event.colno,
+    };
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'global',
+      ...errorDetails,
+      message: errorDetails.message || event.message,
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+  // Listen for unhandled promise rejections (asynchronous errors).
+  window.addEventListener('unhandledrejection', function(event) {
+    const errorDetails = getErrorObject(event.reason);
+
+    window.parent.postMessage({
+      type: 'error',
+      source: 'unhandledrejection',
+      ...errorDetails,
+      message: errorDetails.message || 'Unhandled Promise Rejection',
+      timestamp: new Date().toISOString(),
+    }, '*');
+  });
+
+})();</script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infografía: NIA 720 (Revisada)</title>
+    <!-- Carga de Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <!-- Fuente Inter de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Playfair+Display:wght@700&amp;display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos personalizados */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF0F5; /* Rosa muy claro (Lavender Blush) */
+            overflow-x: hidden; /* Evita scroll horizontal */
+        }
+
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+            color: #8B008B; /* Magenta Oscuro */
+        }
+
+        /* Contenedor de burbujas */
+        #bubble-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        /* Estilo de burbuja */
+        .bubble {
+            position: absolute;
+            background-color: rgba(255, 105, 180, 0.3); /* Rosa translúcido (Hot Pink) */
+            border-radius: 50%;
+            animation: moveBubbles linear infinite;
+            bottom: -150px;
+            opacity: 0;
+        }
+
+        /* Animación de las burbujas */
+        @keyframes moveBubbles {
+            0% {
+                transform: translateY(0) scale(0.5);
+                opacity: 0.1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+            100% {
+                transform: translateY(-100vh) scale(1);
+                opacity: 0;
+            }
+        }
+
+        /* Estilos para los cuadros (nodos del mapa) */
+        .concept-box {
+            background-color: white;
+            border: 2px solid #FFB6C1; /* Rosa Claro (Light Pink) */
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(219, 112, 147, 0.1); /* Sombra Pale Violet Red */
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        .concept-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(219, 112, 147, 0.2);
+        }
+
+        /* Estilo para los títulos de los cuadros */
+        .box-title {
+            color: #C71585; /* Rosa Fuerte (Medium Violet Red) */
+            font-weight: 700;
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem; /* 24px */
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #FFC0CB; /* Rosa */
+            padding-bottom: 0.5rem;
+        }
+        
+        /* Estilo para los subtítulos (Explicación, Ejemplo) */
+        .box-subtitle {
+            color: #DB7093; /* Pale Violet Red */
+            font-weight: 600;
+            font-size: 1.125rem; /* 18px */
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .box-content {
+            color: #555;
+            font-size: 0.95rem; /* 15px */
+            line-height: 1.6;
+        }
+        
+        /* Conectores / Flechas (Simulación) */
+        .connector {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: -0.5rem 0;
+            color: #DB7093; /* Pale Violet Red */
+            font-size: 2.5rem;
+            font-weight: bold;
+            z-index: 5;
+        }
+        
+        /* Estilo para el informe de auditoría */
+        .audit-report {
+            background-color: #FFF9FA; /* Rosa muy muy claro */
+            border: 1px dashed #DB7093;
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Times New Roman', Times, serif;
+            color: #333;
+            line-height: 1.5;
+        }
+        .audit-report h4 {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.relative{position:relative}.z-10{z-index:10}.mx-auto{margin-left:auto;margin-right:auto}.my-2{margin-top:0.5rem;margin-bottom:0.5rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.ml-4{margin-left:1rem}.mt-10{margin-top:2.5rem}.mt-4{margin-top:1rem}.box-content{box-sizing:content-box}.flex{display:flex}.grid{display:grid}.w-80{width:20rem}.w-full{width:100%}.max-w-7xl{max-width:80rem}.flex-shrink-0{flex-shrink:0}.list-inside{list-style-position:inside}.list-decimal{list-style-type:decimal}.list-disc{list-style-type:disc}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.gap-6{gap:1.5rem}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.overflow-x-auto{overflow-x:auto}.border-t-2{border-top-width:2px}.border-pink-200{--tw-border-opacity:1;border-color:rgb(251 207 232 / var(--tw-border-opacity, 1))}.bg-pink-100{--tw-bg-opacity:1;background-color:rgb(252 231 243 / var(--tw-bg-opacity, 1))}.bg-pink-50{--tw-bg-opacity:1;background-color:rgb(253 242 248 / var(--tw-bg-opacity, 1))}.p-4{padding:1rem}.p-6{padding:1.5rem}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.font-bold{font-weight:700}.font-semibold{font-weight:600}.text-gray-600{--tw-text-opacity:1;color:rgb(75 85 99 / var(--tw-text-opacity, 1))}.text-pink-700{--tw-text-opacity:1;color:rgb(190 24 93 / var(--tw-text-opacity, 1))}.text-pink-800{--tw-text-opacity:1;color:rgb(157 23 77 / var(--tw-text-opacity, 1))}@media (min-width: 768px){.md\:col-span-2{grid-column:span 2 / span 2}.md\:w-96{width:24rem}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:p-8{padding:2rem}.md\:text-3xl{font-size:1.875rem;line-height:2.25rem}.md\:text-5xl{font-size:3rem;line-height:1}}</style></head>
+<body class="bg-pink-50">
+
+    <!-- Contenedor de Burbujas -->
+    <div id="bubble-container"><span class="bubble" style="width: 38.2704px; height: 38.2704px; left: 34.4352vw; animation-duration: 17.857s; animation-delay: 4.18872s;"></span><span class="bubble" style="width: 76.5595px; height: 76.5595px; left: 10.6204vw; animation-duration: 11.9463s; animation-delay: 4.26003s;"></span><span class="bubble" style="width: 45.6168px; height: 45.6168px; left: 21.555vw; animation-duration: 10.4295s; animation-delay: 2.58912s;"></span><span class="bubble" style="width: 76.6239px; height: 76.6239px; left: 43.8582vw; animation-duration: 14.3265s; animation-delay: 4.05365s;"></span><span class="bubble" style="width: 69.8428px; height: 69.8428px; left: 89.0465vw; animation-duration: 17.467s; animation-delay: 0.235816s;"></span><span class="bubble" style="width: 33.411px; height: 33.411px; left: 7.7507vw; animation-duration: 10.9217s; animation-delay: 0.472178s;"></span><span class="bubble" style="width: 60.8515px; height: 60.8515px; left: 89.0022vw; animation-duration: 11.7908s; animation-delay: 0.926087s;"></span><span class="bubble" style="width: 47.0526px; height: 47.0526px; left: 69.9147vw; animation-duration: 9.09675s; animation-delay: 4.49385s;"></span><span class="bubble" style="width: 45.2535px; height: 45.2535px; left: 21.4611vw; animation-duration: 12.4068s; animation-delay: 2.90358s;"></span><span class="bubble" style="width: 45.916px; height: 45.916px; left: 80.9398vw; animation-duration: 11.8907s; animation-delay: 2.42588s;"></span><span class="bubble" style="width: 62.1942px; height: 62.1942px; left: 22.1328vw; animation-duration: 9.18212s; animation-delay: 3.33846s;"></span><span class="bubble" style="width: 76.271px; height: 76.271px; left: 33.434vw; animation-duration: 9.32808s; animation-delay: 0.40551s;"></span><span class="bubble" style="width: 33.2585px; height: 33.2585px; left: 79.5672vw; animation-duration: 12.3267s; animation-delay: 3.60526s;"></span><span class="bubble" style="width: 31.505px; height: 31.505px; left: 11.2928vw; animation-duration: 10.3558s; animation-delay: 4.69991s;"></span><span class="bubble" style="width: 47.2823px; height: 47.2823px; left: 44.9271vw; animation-duration: 16.4411s; animation-delay: 2.08788s;"></span><span class="bubble" style="width: 69.1261px; height: 69.1261px; left: 54.4028vw; animation-duration: 8.16497s; animation-delay: 1.86715s;"></span><span class="bubble" style="width: 33.8899px; height: 33.8899px; left: 35.5984vw; animation-duration: 9.84763s; animation-delay: 1.64715s;"></span><span class="bubble" style="width: 74.202px; height: 74.202px; left: 35.7285vw; animation-duration: 9.92899s; animation-delay: 3.24587s;"></span><span class="bubble" style="width: 45.3978px; height: 45.3978px; left: 48.2149vw; animation-duration: 12.1176s; animation-delay: 3.5523s;"></span><span class="bubble" style="width: 30.4582px; height: 30.4582px; left: 94.1663vw; animation-duration: 8.09316s; animation-delay: 1.50617s;"></span></div>
+
+    <div class="container mx-auto p-4 md:p-8 max-w-7xl relative z-10">
+        
+        <!-- Título Principal -->
+        <header class="text-center mb-10">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">NORMA INTERNACIONAL DE AUDITORÍA 720 (REVISADA)</h1>
+            <h2 class="text-2xl md:text-3xl text-pink-700">Responsabilidades del Auditor con Respecto a Otra Información</h2>
+        </header>
+
+        <!-- Nivel 1: Introducción, Alcance, Vigor -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-4">
+            <div class="concept-box md:col-span-2">
+                <h3 class="box-title">Introducción y Alcance de esta NIA</h3>
+                <p class="box-subtitle">Explicación Entendible</p>
+                <p class="box-content">
+                    Esta norma explica qué debe hacer el auditor con la "otra información" que se publica junto a los estados financieros que él auditó. La "otra información" es, comúnmente, el Informe Anual de la empresa (la carta del presidente, el informe de gestión, gráficos de ventas, etc.) que no forma parte de los estados financieros auditados.
+                    <br><br>
+                    El auditor <strong>no da una opinión</strong> sobre esta "otra información", pero tiene la responsabilidad de <strong>leerla y considerarla</strong>. ¿Por qué? Porque si la "otra información" dice algo que contradice los estados financieros (que sí auditó), se daña la credibilidad de todo el paquete.
+                </p>
+                <p class="box-subtitle">Ejemplo</p>
+                <p class="box-content">
+                    Un auditor revisa los estados financieros de una fábrica de bebidas, "Bebidas del Sol S.A.". Los estados financieros auditados muestran una <strong>ganancia neta de $1 millón</strong>. Sin embargo, en la "Carta del Presidente" (que es "otra información"), el presidente escribe: "¡Fue un año espectacular, con ganancias de $5 millones!".
+                    <br><br>
+                    Esto es una <strong>incongruencia material</strong>. La NIA 720 obliga al auditor a detectar esto y actuar, aunque él no haya auditado la carta del presidente.
+                </p>
+            </div>
+            <div class="concept-box">
+                <h3 class="box-title">Fecha de Entrada en Vigor</h3>
+                <p class="box-subtitle">Explicación Entendible</p>
+                <p class="box-content">
+                    Este requerimiento simplemente establece desde cuándo es obligatoria esta norma.
+                </p>
+                <p class="box-subtitle">Ejemplo</p>
+                <p class="box-content">
+                    La norma es aplicable para auditorías de estados financieros de periodos terminados a partir del 15 de diciembre de 2016. Si "Bebidas del Sol S.A." cierra su año fiscal el 31 de diciembre de 2024, esta NIA es totalmente aplicable.
+                </p>
+            </div>
+        </div>
+
+        <div class="connector">↓</div>
+
+        <!-- Nivel 2: Objetivos y Definiciones -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-4">
+            <div class="concept-box">
+                <h3 class="box-title">Objetivos</h3>
+                <p class="box-subtitle">Explicación Entendible</p>
+                <p class="box-content">
+                    Los objetivos principales del auditor al aplicar esta NIA son:
+                    </p><ol class="list-decimal list-inside ml-4">
+                        <li><strong>Identificar incongruencias:</strong> Ver si la "otra información" choca con los estados financieros auditados.</li>
+                        <li><strong>Comparar con su conocimiento:</strong> Ver si la "otra información" choca con lo que el auditor aprendió de la empresa durante toda la auditoría.</li>
+                        <li><strong>Responder adecuadamente:</strong> Tomar acción si encuentra un problema (hablar con la gerencia, pedir correcciones).</li>
+                        <li><strong>Informar:</strong> Incluir una sección específica sobre esto en su dictamen de auditoría.</li>
+                    </ol>
+                <p></p>
+                <p class="box-subtitle">Ejemplo</p>
+                <p class="box-content">
+                    El auditor de "Bebidas del Sol S.A." tiene el objetivo de leer el informe de gestión y confirmar que: (1) Las cifras de ventas que menciona ($10M) coinciden con los estados financieros ($10M), y (2) La descripción de que "se cerró la planta de jugos" coincide con lo que él vio en la auditoría (que la planta sí se cerró y se dio de baja el activo).
+                </p>
+            </div>
+            <div class="concept-box">
+                <h3 class="box-title">Definiciones</h3>
+                <p class="box-subtitle">Explicación Entendible</p>
+                <p class="box-content">
+                    <strong>1. Informe Anual:</strong> Documento (o conjunto de documentos) que la empresa da a sus dueños (accionistas) con información sobre sus operaciones y finanzas. Generalmente incluye los estados financieros y el dictamen del auditor.
+                    <br><br>
+                    <strong>2. Otra Información:</strong> Toda la información (financiera y no financiera) en el Informe Anual, <i>excepto</i> los estados financieros y el dictamen del auditor.
+                    <br><br>
+                    <strong>3. Incorrección en la Otra Información:</strong> Cuando la "otra información" está mal expresada o induce a error (ya sea por un dato falso, una omisión o porque es engañosa).
+                </p>
+                <p class="box-subtitle">Ejemplo</p>
+                <p class="box-content">
+                    En "Bebidas del Sol S.A.":
+                    <br>
+                    <strong>Informe Anual:</strong> El libro de 50 páginas que se envía a los accionistas.
+                    <br>
+                    <strong>Estados Financieros:</strong> Las páginas 20-30 (Balance, Estado de Resultados, etc.).
+                    <br>
+                    <strong>Otra Información:</strong> Las páginas 1-19 (Carta del Presidente, fotos, informe de sostenibilidad) y 31-50 (gráficos, análisis de mercado).
+                </p>
+            </div>
+        </div>
+
+        <div class="connector">↓</div>
+
+        <!-- Nivel 3: Requerimientos (Sección Maestra) -->
+        <div class="concept-box w-full">
+            <h3 class="box-title text-center text-3xl">Requerimientos</h3>
+            <p class="text-center text-gray-600 mb-8">Estos son los pasos obligatorios que el auditor debe seguir. Se presentan en un flujo horizontal.</p>
+
+            <!-- Nivel Jerárquico Horizontal de Requerimientos -->
+            <div class="flex overflow-x-auto space-x-6 p-4">
+                
+                <!-- Tarjeta 1: Obtención -->
+                <div class="concept-box flex-shrink-0 w-80 md:w-96">
+                    <h3 class="box-title text-xl">1. Obtención de la Otra Información</h3>
+                    <p class="box-subtitle">Explicación</p>
+                    <p class="box-content">El auditor debe hablar con la dirección para saber qué documentos forman el "Informe Anual" y cuándo estarán listos. El objetivo es conseguir la versión final de esa "otra información" antes de firmar su dictamen. Si no es posible, debe obtenerla tan pronto como esté disponible.</p>
+                    <p class="box-subtitle">Ejemplo</p>
+                    <p class="box-content">El auditor le dice al Gerente Financiero de la fábrica de bebidas: "Necesito la versión final del Informe de Gestión y la Carta del Presidente antes del 20 de febrero, que es la fecha en que planeo firmar mi opinión sobre los estados financieros."</p>
+                </div>
+                
+                <!-- Tarjeta 2: Lectura y Consideración -->
+                <div class="concept-box flex-shrink-0 w-80 md:w-96">
+                    <h3 class="box-title text-xl">2. Lectura y Consideración</h3>
+                    <p class="box-subtitle">Explicación</p>
+                    <p class="box-content">El auditor debe leer la "otra información" buscando dos tipos de problemas:
+                    <br><strong>(a) Incongruencia con EEFF:</strong> Comparar cifras (ventas, costos, activos) de la "otra información" con los estados financieros auditados.
+                    <br><strong>(b) Incongruencia con Conocimiento:</strong> Comparar declaraciones no numéricas (como "abrimos 3 nuevas fábricas") con lo que el auditor sabe que es verdad (él sabe que solo se abrió 1).</p>
+                    <p class="box-subtitle">Ejemplo</p>
+                    <p class="box-content">El auditor lee el informe de gestión de la fábrica, que dice: "Nuestras ventas de 'Jugo Naranja' aumentaron 50%". El auditor va a sus papeles de trabajo y a los estados financieros y confirma que, en realidad, aumentaron solo 5%. Esto es una incongruencia material.</p>
+                </div>
+
+                <!-- Tarjeta 3: Respuesta a Incongruencias -->
+                <div class="concept-box flex-shrink-0 w-80 md:w-96">
+                    <h3 class="box-title text-xl">3. Respuesta (Si parece existir un problema)</h3>
+                    <p class="box-subtitle">Explicación</p>
+                    <p class="box-content">Si el auditor detecta una posible incongruencia (como el 50% vs 5%), debe discutirla con la dirección. Debe determinar si el error está en la "otra información" (lo más común) o si, peor aún, ¡el error está en los estados financieros y él no lo había visto! (lo que requeriría re-abrir la auditoría de esa área).</p>
+                    <p class="box-subtitle">Ejemplo</p>
+                    <p class="box-content">El auditor le dice a la gerencia: "Su informe dice 50% de aumento en jugos, pero mis cifras auditadas dicen 5%. ¿Pueden explicarlo?". La gerencia revisa y responde: "Tiene razón, fue un error de dedo (lapsus). Era 5%".</p>
+                </div>
+                
+                <!-- Tarjeta 4: Respuesta (Si se confirma el error) -->
+                <div class="concept-box flex-shrink-0 w-80 md:w-96">
+                    <h3 class="box-title text-xl">4. Respuesta (Si se confirma la incorrección)</h3>
+                    <p class="box-subtitle">Explicación</p>
+                    <p class="box-content">Si se confirma que la "otra información" está mal, el auditor solicita a la dirección que la corrija.
+                    <br><strong>Si la dirección acepta:</strong> El auditor verifica que la corrección se haga.
+                    <br><strong>Si la dirección se niega:</strong> El auditor debe escalar el problema a los "responsables del gobierno" (Comité de Auditoría, Junta Directiva) y, si aún así no se corrige, debe describirlo en su dictamen o, en casos extremos, renunciar.</p>
+                    <p class="box-subtitle">Ejemplo</p>
+                    <p class="box-content">La gerencia corrige el "50%" a "5%". El auditor verifica la nueva versión del informe y queda satisfecho. Si se hubieran negado, el auditor tendría que decirlo en su dictamen.</p>
+                </div>
+                
+                <!-- Tarjeta 5: Informe -->
+                <div class="concept-box flex-shrink-0 w-80 md:w-96">
+                    <h3 class="box-title text-xl">5. Informe</h3>
+                    <p class="box-subtitle">Explicación</p>
+                    <p class="box-content">El dictamen del auditor <strong>DEBE</strong> incluir una sección separada titulada "Otra Información". Esta sección debe:
+                    <br>1. Decir que la dirección es responsable de ella.
+                    <br>2. Aclarar que la opinión del auditor NO cubre esta "otra información".
+                    <br>3. Describir la responsabilidad del auditor (leerla y considerarla).
+                    <br>4. Concluir. Si todo está bien (o se corrigió), el auditor declara que "no tiene nada que informar al respecto". Si hay un error no corregido, lo describe aquí.</p>
+                    <p class="box-subtitle">Ejemplo</p>
+                    <p class="box-content">Ver el "Informe de Auditoría" en el caso práctico de abajo.</p>
+                </div>
+                
+                <!-- Tarjeta 6: Documentación -->
+                <div class="concept-box flex-shrink-0 w-80 md:w-96">
+                    <h3 class="box-title text-xl">6. Documentación</h3>
+                    <p class="box-subtitle">Explicación</p>
+                    <p class="box-content">El auditor debe dejar evidencia en sus "papeles de trabajo" de lo que hizo. Debe documentar los procedimientos que aplicó (Ej. "Se leyó el Informe de Gestión y se cruzaron las cifras de ventas y activos") y debe guardar una copia de la versión final de la "otra información" que revisó.</p>
+                    <p class="box-subtitle">Ejemplo</p>
+                    <p class="box-content">El auditor guarda el PDF final del "Informe Anual 2024" de la fábrica de bebidas y escribe una nota interna (memorándum) resumiendo que la incongruencia del 50% vs 5% fue detectada, discutida y corregida por la gerencia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="connector">↓</div>
+
+        <!-- Nivel 4: Caso Práctico -->
+        <div class="concept-box w-full">
+            <h3 class="box-title text-center text-3xl">Caso Práctico: Embotelladora "La Cascada S.A."</h3>
+            <p class="box-subtitle">La Situación</p>
+            <p class="box-content">
+                "Auditores Independientes" está auditando los estados financieros de "La Cascada S.A." (una fábrica de bebidas) al 31 de diciembre de 2024. Los estados financieros (EEFF) auditados están correctos y muestran:
+                </p><ul class="list-disc list-inside ml-4 my-2">
+                    <li><strong>Ventas Totales:</strong> $80 Millones</li>
+                    <li><strong>Ganancia Neta:</strong> $4 Millones</li>
+                    <li><strong>Inversión en Activos (Maquinaria Nueva):</strong> $10 Millones</li>
+                </ul>
+            <p></p>
+            <p class="box-subtitle">Paso 1 y 2: Obtención y Lectura</p>
+            <p class="box-content">
+                El 15 de febrero de 2025, el auditor obtiene el borrador del "Informe Anual a los Accionistas". Al leer la "Carta del Presidente" (que es "otra información"), el auditor encuentra dos problemas:
+                <br><br>
+                <strong>Incongruencia 1 (con EEFF):</strong> La carta dice: "Cerramos un año excelente, alcanzando ventas de $85 millones..."
+                <br><i>(Problema: Los EEFF auditados dicen $80 millones).</i>
+                <br><br>
+                <strong>Incongruencia 2 (con Conocimiento del Auditor):</strong> La carta dice: "Nuestra eficiencia mejoró drásticamente gracias a la nueva línea de embotellado de alta velocidad instalada este año..."
+                <br><i>(Problema: El auditor sabe, por su revisión de activos fijos, que esa maquinaria de $10M se compró el 29 de diciembre de 2024 y recién se instaló y empezó a operar en febrero de 2025. Por lo tanto, no pudo haber mejorado la eficiencia de 2024).</i>
+            </p>
+            <p class="box-subtitle">Paso 3 y 4: Respuesta y Resolución</p>
+            <p class="box-content">
+                El socio de auditoría se reúne con la Gerencia de "La Cascada S.A.":
+                </p><ol class="list-decimal list-inside ml-4 my-2">
+                    <li><strong>Respuesta a Incongruencia 1:</strong> La Gerencia admite el error. Los $85M era una meta, pero la cifra real auditada es $80M. Aceptan corregir la carta.</li>
+                    <li><strong>Respuesta a Incongruencia 2:</strong> La Gerencia argumenta que "no es un error, es solo marketing optimista". El auditor insiste en que la declaración es materialmente engañosa, ya que atribuye los buenos resultados de 2024 a un activo que no operó en 2024. La Gerencia se niega a cambiarlo.</li>
+                    <li><strong>Escalamiento:</strong> El auditor comunica formalmente la Incongruencia 2 (el tema de la maquinaria) al Comité de Auditoría de la Junta Directiva.</li>
+                    <li><strong>Resolución:</strong> El Comité de Auditoría instruye a la Gerencia a modificar la redacción. La Gerencia acepta y la nueva redacción dice: "...y con la reciente adquisición de nuestra nueva línea de embotellado, esperamos mejoras drásticas de eficiencia en 2025."</li>
+                </ol>
+            <p></p>
+            <p class="box-subtitle">Paso 5: Informe de Auditoría (Resultado)</p>
+            <p class="box-content">
+                Como todos los problemas fueron corregidos por la gerencia antes de la emisión del dictamen, el auditor puede emitir una opinión limpia (no modificada). La sección "Otra Información" de su dictamen se verá así:
+            </p>
+            
+            <!-- Ejemplo de Informe de Auditoría -->
+            <div class="audit-report mt-4">
+                <h4>INFORME DE AUDITORÍA EMITIDO POR UN AUDITOR INDEPENDIENTE</h4>
+                <p>A los Accionistas de Embotelladora "La Cascada S.A."</p>
+                <br>
+                <h4>Opinión</h4>
+                <p>Hemos auditado los estados financieros de Embotelladora "La Cascada S.A." (...) En nuestra opinión, los estados financieros adjuntos presentan razonablemente, en todos los aspectos materiales, la situación financiera de la Sociedad al 31 de diciembre de 2024, así como su desempeño financiero (...) de conformidad con las Normas Internacionales de Información Financiera (NIIF).</p>
+                
+                <h4>Fundamento de la Opinión</h4>
+                <p>Hemos llevado a cabo nuestra auditoría de conformidad con las Normas Internacionales de Auditoría (NIA). (...) Consideramos que la evidencia de auditoría que hemos obtenido proporciona una base suficiente y adecuada para nuestra opinión.</p>
+                
+                <h4 style="color: #C71585; background-color: #FFF0F5; padding: 5px;">Otra Información</h4>
+                <p>La dirección es responsable de la otra información. La otra información comprende el "Informe Anual a los Accionistas 2024" (pero no incluye los estados financieros ni nuestro informe de auditoría correspondiente).</p>
+                <p>Nuestra opinión sobre los estados financieros no cubre la otra información y no expresamos ninguna forma de conclusión que proporcione un grado de seguridad sobre esta.</p>
+                <p>En relación con nuestra auditoría de los estados financieros, nuestra responsabilidad es leer la otra información y, al hacerlo, considerar si existe una incongruencia material entre la otra información y los estados financieros o el conocimiento obtenido por nosotros en la auditoría, o si parece que existe una incorrección material en la otra información por algún otro motivo.</p>
+                <p>Si, basándonos en el trabajo que hemos realizado, concluimos que existe una incorrección material en esta otra información, estamos obligados a informar de ello. <strong>No tenemos nada de lo que informar a este respecto.</strong></p>
+                
+                <h4>Responsabilidades de la Dirección (...)</h4>
+                <p>[Texto estándar]</p>
+                
+                <h4>Responsabilidades del Auditor (...)</h4>
+                <p>[Texto estándar]</p>
+                <br>
+                <p>Firma: Auditores Independientes</p>
+                <p>Fecha: 25 de febrero de 2025</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Pie de Página -->
+    <footer class="text-center p-6 mt-10 bg-pink-100 border-t-2 border-pink-200 z-10 relative">
+        <p class="text-sm text-pink-800 font-semibold">
+            Creado por Nathaly Jasmin Pérez Girón, NIA's II, Sección "C"
+        </p>
+    </footer>
+
+    <script>
+        // Script para generar burbujas movibles
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const bubbleContainer = document.getElementById('bubble-container');
+
+            function createBubble() {
+                if (!bubbleContainer) return;
+
+                const bubble = document.createElement('span');
+                bubble.classList.add('bubble');
+                
+                const size = Math.random() * 60 + 20; // Tamaño entre 20px y 80px
+                bubble.style.width = `${size}px`;
+                bubble.style.height = `${size}px`;
+                
+                // Posición horizontal aleatoria
+                bubble.style.left = `${Math.random() * 100}vw`;
+                
+                // Duración de animación aleatoria
+                const duration = Math.random() * 10 + 8; // Duración entre 8s y 18s
+                bubble.style.animationDuration = `${duration}s`;
+                
+                // Delay aleatorio
+                const delay = Math.random() * 5;
+                bubble.style.animationDelay = `${delay}s`;
+
+                bubbleContainer.appendChild(bubble);
+
+                // Remover la burbuja cuando la animación termina
+                bubble.addEventListener('animationend', () => {
+                    bubble.remove();
+                });
+            }
+
+            // Crear múltiples burbujas iniciales
+            for (let i = 0; i < 20; i++) {
+                createBubble();
+            }
+            
+            // Crear nuevas burbujas intermitentemente (opcional, puede ser mucho)
+            // setInterval(createBubble, 2000); 
+        });
+    </script>
+
+</body></html>
